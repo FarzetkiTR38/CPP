@@ -14,7 +14,7 @@ int main() {
 setlocale(LC_ALL, "Turkish");
 system("Color 0A");
 
-	//	randmax = rand() % (büyüksayi - küçüksayi + 1) + küçüksayi    // +1 ekleme sebebimiz en büyük sayıyı dahil etmek.
+	//	randmax = rand() % (bÃ¼yÃ¼ksayi - kÃ¼Ã§Ã¼ksayi + 1) + kÃ¼Ã§Ã¼ksayi    // +1 ekleme sebebimiz en bÃ¼yÃ¼k sayÄ±yÄ± dahil etmek.
 	srand(time(0));
 	
 	double ciro[5][12];
@@ -28,7 +28,7 @@ system("Color 0A");
 		for (int j = 0; j<12 ; j++) {
 			ciro[i][j] = rand() % (5000-100+1) + 100;
 			toplam[i] += ciro[i][j];
-			cout << (i+1) << ". yılın " << (j+1) << ". ayının cirosu = " << ciro[i][j] << endl;
+			cout << (i+1) << ". yÄ±lÄ±n " << (j+1) << ". ayÄ±nÄ±n cirosu = " << ciro[i][j] << endl;
 		}
 	}
 	
@@ -37,14 +37,14 @@ system("Color 0A");
 	}
 	
 	for (int i = 0; i<5 ; i++) {
-		cout << (i+1) << ". yıl ortalama ciro = " << ortciro[i] << endl;
+		cout << (i+1) << ". yÄ±l ortalama ciro = " << ortciro[i] << endl;
 	}
 	
-	cout << "Ciro ortalamasından fazla olan ayları görmeyi istediğiniz yılı giriniz (1-2-3-4-5) = " << endl;
+	cout << "Ciro ortalamasÄ±ndan fazla olan aylarÄ± gÃ¶rmeyi istediÃ°iniz yÄ±lÄ± giriniz (1-2-3-4-5) = " << endl;
 	cin >> girilensayi;
 	
-	cout << girilensayi << " yılındaki ortalama cirodan fazla cirosu olan aylar = " << endl;
-	cout << girilensayi << " yılındaki (ciro ortalaması) " << ortciro[girilensayi] << endl;
+	cout << girilensayi << " yÄ±lÄ±ndaki ortalama cirodan fazla cirosu olan aylar = " << endl;
+	cout << girilensayi << " yÄ±lÄ±ndaki (ciro ortalamasÄ±) " << ortciro[girilensayi] << endl;
 	
 	for (int i = 0; i<12 ; i++) {
 		if (ciro[girilensayi-1][i] > ortciro[girilensayi-1]) {
@@ -52,7 +52,7 @@ system("Color 0A");
 		}
 	}
 	
-	cout << "İlk 3 ayın ciro ortalamasını bulmak istediğiniz yılı giriniz (1-2-3-4-5) = " << endl;
+	cout << "Ä±lk 3 ayÄ±n ciro ortalamasÄ±nÄ± bulmak istediÃ°iniz yÄ±lÄ± giriniz (1-2-3-4-5) = " << endl;
 	cin >> girilensayi2;
 	
 	for (int i = 0; i<3 ; i++) {
@@ -60,7 +60,7 @@ system("Color 0A");
 		ortciro3ay += ciro[girilensayi2-1][i];
 	}
 	
-	cout << girilensayi2 << " yılındaki ilk 3 ayın ciro ortalaması " << ortciro3ay / 3 << endl;
+	cout << girilensayi2 << " yÄ±lÄ±ndaki ilk 3 ayÄ±n ciro ortalamasÄ± " << ortciro3ay / 3 << endl;
 	
 		
 return 0;
