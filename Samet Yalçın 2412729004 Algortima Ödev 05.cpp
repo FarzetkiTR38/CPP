@@ -14,7 +14,7 @@ int main() {
 setlocale(LC_ALL, "Turkish");
 system("Color 0A");
 
-	//	randmax = rand() % (büyüksayi - küçüksayi + 1) + küçüksayi    // +1 ekleme sebebimiz en büyük sayıyı dahil etmek.
+	//	randmax = rand() % (bÃ¼yÃ¼ksayi - kÃ¼Ã§Ã¼ksayi + 1) + kÃ¼Ã§Ã¼ksayi    // +1 ekleme sebebimiz en bÃ¼yÃ¼k sayÄ±yÄ± dahil etmek.
 	srand(time(0));
 
 	int sayilar3[500]; 
