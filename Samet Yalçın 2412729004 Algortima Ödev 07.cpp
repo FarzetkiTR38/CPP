@@ -14,7 +14,7 @@ int main() {
 setlocale(LC_ALL, "Turkish");
 system("Color 0A");
 
-	//	randmax = rand() % (büyüksayi - küçüksayi + 1) + küçüksayi    // +1 ekleme sebebimiz en büyük sayıyı dahil etmek.
+	//	randmax = rand() % (bÃ¼yÃ¼ksayi - kÃ¼Ã§Ã¼ksayi + 1) + kÃ¼Ã§Ã¼ksayi    // +1 ekleme sebebimiz en bÃ¼yÃ¼k sayÄ±yÄ± dahil etmek.
 	srand(time(0));
 
 	float sayilar4[500]; 
@@ -24,7 +24,7 @@ system("Color 0A");
 		tamsayilar[i] = rand() % (100-0+1)-0;
 		kesirlisayilar[i] = (float)rand() / (float)RAND_MAX;
 		sayilar4[i] = tamsayilar[i] + kesirlisayilar[i];
-		cout << (i+1) << ". üretilen kesirli sayı --> " << sayilar4[i] << endl; 
+		cout << (i+1) << ". Ã¼retilen kesirli sayÄ± --> " << sayilar4[i] << endl; 
 	}
 	
 return 0;
