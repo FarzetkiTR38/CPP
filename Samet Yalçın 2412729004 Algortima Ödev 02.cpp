@@ -14,7 +14,7 @@ int main() {
 setlocale(LC_ALL, "Turkish");
 system("Color 0A");
 
-	//	randmax = rand() % (büyüksayi - küçüksayi + 1) + küçüksayi    // +1 ekleme sebebimiz en büyük sayıyı dahil etmek.
+	//	randmax = rand() % (bÃ¼yÃ¼ksayi - kÃ¼Ã§Ã¼ksayi + 1) + kÃ¼Ã§Ã¼ksayi    // +1 ekleme sebebimiz en bÃ¼yÃ¼k sayÄ±yÄ± dahil etmek.
 	srand(time(0));
 
 	int matrisA[3][3];
@@ -25,14 +25,14 @@ system("Color 0A");
 	
 	for (int i= 0; i<3; i++) {
 		for (int j = 0; j< 3 ; j++) {
-			cout << "A matrisinin " << i+1 << j+1 << " elemanını belirtiniz = ";
+			cout << "A matrisinin " << i+1 << j+1 << " elemanÄ±nÄ± belirtiniz = ";
 			cin >> matrisA[i][j];
 		}
 	}
 	
 	for (int i= 0; i<3; i++) {
 		for (int j = 0; j< 3 ; j++) {
-			cout << "B matrisinin " << i+1 << j+1 << " elemanını belirtiniz = ";
+			cout << "B matrisinin " << i+1 << j+1 << " elemanÄ±nÄ± belirtiniz = ";
 			cin >> matrisB[i][j];
 		}
 	}
@@ -44,7 +44,7 @@ system("Color 0A");
 	}
 
 
-	// matris çarpımını for ile yapmaya beynim yetmedi :d manuel yapıyorum fakat öğrenince for ile yaparım.
+	// matris Ã§arpÄ±mÄ±nÄ± for ile yapmaya beynim yetmedi :d manuel yapÄ±yorum fakat Ã¶Ã°renince for ile yaparÄ±m.
     matriscarpimi[0][0] = matrisA[0][0] * matrisB[0][0] + matrisA[0][1] * matrisB[1][0] + matrisA[0][2] * matrisB[2][0];
     matriscarpimi[0][1] = matrisA[0][0] * matrisB[0][1] + matrisA[0][1] * matrisB[1][1] + matrisA[0][2] * matrisB[2][1];
     matriscarpimi[0][2] = matrisA[0][0] * matrisB[0][2] + matrisA[0][1] * matrisB[1][2] + matrisA[0][2] * matrisB[2][2];
@@ -55,9 +55,9 @@ system("Color 0A");
     matriscarpimi[2][1] = matrisA[2][0] * matrisB[0][1] + matrisA[2][1] * matrisB[1][1] + matrisA[2][2] * matrisB[2][1];
     matriscarpimi[2][2] = matrisA[2][0] * matrisB[0][2] + matrisA[2][1] * matrisB[1][2] + matrisA[2][2] * matrisB[2][2];
 
-	// öğrendim buna gerek kalmadı :9 //
+	// Ã¶Ã°rendim buna gerek kalmadÄ± :9 //
 
-	// dedim ama kod yanlış öhöm 
+	// dedim ama kod yanlÄ±Ã¾ Ã¶hÃ¶m 
 
 
 //  for (int i = 0; i<3; i++) {
@@ -68,13 +68,13 @@ system("Color 0A");
 //		}
 //	}
  
- 	// bunu bu şekilde for ile yapmam gerekiyor normalde ama yapamadığım için normal yaptım sonucu değiştirmiyor ^^
+ 	// bunu bu Ã¾ekilde for ile yapmam gerekiyor normalde ama yapamadÄ±Ã°Ä±m iÃ§in normal yaptÄ±m sonucu deÃ°iÃ¾tirmiyor ^^
 
 	determinantA = ((matrisA[0][0] * matrisA[1][1] * matrisA[2][2]) + (matrisA[1][0] * matrisA[2][1] * matrisA[0][2]) + (matrisA[2][0] * matrisA[0][1] * matrisA[1][2])) - ((matrisA[0][2] * matrisA[1][1] * matrisA[2][0]) + (matrisA[1][2] * matrisA[2][1] * matrisA[0][0]) + (matrisA[2][2] * matrisA[0][1] * matrisA[1][0]));
  
- 	// bunun da böyle olmaması gerek ama aritmetik bir şekilde artmadığı için beynim yetmedi döngüyle yapmaya.
+ 	// bunun da bÃ¶yle olmamasÄ± gerek ama aritmetik bir Ã¾ekilde artmadÄ±Ã°Ä± iÃ§in beynim yetmedi dÃ¶ngÃ¼yle yapmaya.
  
-	cout << "Oluşturduğunuz A matrisi = " << endl;
+	cout << "OluÃ¾turduÃ°unuz A matrisi = " << endl;
 	for (int i= 0; i<3; i++) {
 		for (int j = 0; j< 3 ; j++) {
 			cout << setw(3) << matrisA[i][j];
@@ -82,7 +82,7 @@ system("Color 0A");
 		cout << endl;
 	}
 	
-	cout << "Oluşturduğunuz B matrisi = " << endl;
+	cout << "OluÃ¾turduÃ°unuz B matrisi = " << endl;
 	for (int i= 0; i<3; i++) {
 		for (int j = 0; j< 3 ; j++) {
 			cout << setw(3) << matrisB[i][j];
@@ -93,7 +93,7 @@ system("Color 0A");
 	cout << "C = A + B = " << endl;
 	for (int i= 0; i<3; i++) {
 		for (int j = 0; j< 3 ; j++) {
-			cout << setw(3) << matristoplami[i][j];   //setw kullanmayınca çap oluyor matrisler .. yoksa sevmem kullanmayı
+			cout << setw(3) << matristoplami[i][j];   //setw kullanmayÄ±nca Ã§ap oluyor matrisler .. yoksa sevmem kullanmayÄ±
 		}
 		cout << endl;
 	}
@@ -106,7 +106,7 @@ system("Color 0A");
 		cout << endl;
 	}
 	
-	cout << "A matrisinin determinantı = " << determinantA << endl;
+	cout << "A matrisinin determinantÄ± = " << determinantA << endl;
 
 return 0;
 }
