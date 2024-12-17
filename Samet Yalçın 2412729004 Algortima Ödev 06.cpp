@@ -14,7 +14,7 @@ int main() {
 setlocale(LC_ALL, "Turkish");
 system("Color 0A");
 
-// int atamam gereken yerlere double atama sebebim garip bir bug oluşması, bunu double atayarak düzelttim açıklamış olayım.
+// int atamam gereken yerlere double atama sebebim garip bir bug oluÅŸmasÄ±, bunu double atayarak dÃ¼zelttim aÃ§Ä±klamÄ±ÅŸ olayÄ±m.
 
 	int sayilar[500];
 	double ortalama;
@@ -25,7 +25,7 @@ system("Color 0A");
 	double cift[500];
 	double ortalamadankucukler[500];
 	double ortalamadanbuyukler[500];
-	// int ve float kullandığımda çok garip bir bug oluyor o yüzden double kullandım.
+	// int ve float kullandÄ±ÄŸÄ±mda Ã§ok garip bir bug oluyor o yÃ¼zden double kullandÄ±m.
 	for (int i = 0; i<500; i++) {
 		sayilar[i] = rand() % (100 - 0 + 1)+ 0; 
 		ortalama += sayilar[i];
@@ -53,15 +53,15 @@ system("Color 0A");
 	}
 	
 	for (int j = 0; j < 100 ; j++) {
-		cout << j << " sayısından " << tumsayilar[j] << " adet var." << endl;
+		cout << j << " sayÄ±sÄ±ndan " << tumsayilar[j] << " adet var." << endl;
 	}
 
-	cout << "Çift Sayılar: ";
+	cout << "Ã‡ift SayÄ±lar: ";
 	for (int l = 0; l < 500; l++) {
 		cout << "--> " << cift[l] << endl;
 	}
 	
-	cout << "Tek Sayılar: ";
+	cout << "Tek SayÄ±lar: ";
 	for (int m = 0; m < 500; m++) {
 		cout << "--> " << tek[m] << endl;
 	}
@@ -77,24 +77,24 @@ system("Color 0A");
         }
     }
     
-// bu kısımda hata aldığım için chatgpt yardımı aldım ve fixledim int kucukindex ve int buyukindex'i oluşturttu 
-// ve for'un içine onları yazdı ben farklı yapmıştım ve 0x6fee20 gibi çıktılar vermişti.
-// hatamım sebebi: Dizilerin Sıfırlanması: ortalamadankucukler ve ortalamadanbuyukler dizileri başlangıçta sıfırlanır.
+// bu kÄ±sÄ±mda hata aldÄ±ÄŸÄ±m iÃ§in chatgpt yardÄ±mÄ± aldÄ±m ve fixledim int kucukindex ve int buyukindex'i oluÅŸturttu 
+// ve for'un iÃ§ine onlarÄ± yazdÄ± ben farklÄ± yapmÄ±ÅŸtÄ±m ve 0x6fee20 gibi Ã§Ä±ktÄ±lar vermiÅŸti.
+// hatamÄ±m sebebi: Dizilerin SÄ±fÄ±rlanmasÄ±: ortalamadankucukler ve ortalamadanbuyukler dizileri baÅŸlangÄ±Ã§ta sÄ±fÄ±rlanÄ±r.
 
-    cout << "Ortalamadan Küçükler = ";
+    cout << "Ortalamadan KÃ¼Ã§Ã¼kler = ";
     for (int i = 0; i < kucukIndex; i++) {
         cout << "--> " << ortalamadankucukler[i] << endl;
     }
 
-    cout << "Ortalamadan Büyükler = ";
+    cout << "Ortalamadan BÃ¼yÃ¼kler = ";
     for (int i = 0; i < buyukIndex; i++) {
         cout << "--> " << ortalamadanbuyukler[i] << endl;
     }
     
     ////////////////////////////////////////////////////////////////////
 	
-	cout << "En küçük sayı = " << enkucuk << endl;
-	cout << "En büyük sayı = " << enbuyuk << endl;
+	cout << "En kÃ¼Ã§Ã¼k sayÄ± = " << enkucuk << endl;
+	cout << "En bÃ¼yÃ¼k sayÄ± = " << enbuyuk << endl;
 	cout << "Ortalama = " << ortalama / 500 << endl;
 
 	
